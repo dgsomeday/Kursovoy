@@ -1,0 +1,45 @@
+$sepia: linear-gradient( to bottom, #080808 0%, #382a1b 52%,  #1a140b 100%);
+
+.container5, footer{
+    .img1:hover{
+        background: $sepia;
+        cursor: pointer;
+    }
+}
+@mixin head_h3{
+    text-align: center;
+    font-size: 24px;
+    color: #353535;
+    font-family: 'Open Sans';
+    letter-spacing: 2.1px;
+}
+@mixin fit {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+@function center_1($width_1){
+    @return (($width_1)/1600*100%) ;
+}
+.container3, .container5, .container6 {
+    .head{
+        @include head_h3;
+        margin: 108px 0 67px 0;
+    }
+}
+.container4{
+    .head{
+    @include head_h3;
+    margin: 108px 0 70px 0;
+    color: #f9f4f0;
+    }
+}
+.center {
+    max-width: center_1(1600 - 245*2);
+    width: 100%;
+	margin: 0 auto;
+}
+.center2{
+    width: center_1(1600 - 125*2);
+    margin: 0 0 0 auto;
+}

@@ -1,0 +1,36 @@
+.container5 .img1:hover, footer .img1:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#080808), color-stop(52%, #382a1b), to(#1a140b));
+  background: linear-gradient(to bottom, #080808 0%, #382a1b 52%, #1a140b 100%);
+  cursor: pointer;
+}
+
+.container3 .head, .container5 .head, .container6 .head {
+  text-align: center;
+  font-size: 24px;
+  color: #353535;
+  font-family: 'Open Sans';
+  letter-spacing: 2.1px;
+  margin: 108px 0 67px 0;
+}
+
+.container4 .head {
+  text-align: center;
+  font-size: 24px;
+  color: #353535;
+  font-family: 'Open Sans';
+  letter-spacing: 2.1px;
+  margin: 108px 0 70px 0;
+  color: #f9f4f0;
+}
+
+.center {
+  max-width: 69.375%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center2 {
+  width: 84.375%;
+  margin: 0 0 0 auto;
+}
+/*# sourceMappingURL=style1.css.map */
