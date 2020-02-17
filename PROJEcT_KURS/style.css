@@ -141,7 +141,7 @@ header .row{
     margin: 0 auto;
     margin-top: 32px;
     font-family: 'Open Sans';
-    margin-bottom: 150px;
+    margin-bottom: 230px;
 }
 .container1 .btn a:hover{
     background-color: rgb(143, 108, 63);
@@ -157,17 +157,28 @@ header .row{
     color: #ffffff;
     background-color: #c19864;
 }
-.container1 .owl-dots{
+.cont1 .owl-carousel{
+    z-index: 2;
+    
+}
+.cont1 .owl-dots{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    z-index: 2;
     padding-bottom: 42px;
     outline: none;
+    position: absolute;
+    bottom: 0px;
 }
-.container1 .owl-dots .owl-dot span{ 
+.cont1 .owl-dots .owl-dot span{ 
     background-color: #9e9e9e;
     width: 16px;
     height: 16px;
     outline: none;
+    z-index: 2;
 }
-.container1 .owl-dots .owl-dot.active span{
+.cont1 .owl-dots .owl-dot.active span{
     background-color: #c19864;
     border: none;
     text-decoration: none;
@@ -297,10 +308,10 @@ header .row{
 } 
 .container5 .item img{
     max-width: 100%;
-
 }
 .container5 .item{
     margin: 20px auto;
+    max-width: 100%;
 }
 .container5 .item .img1{
     position: relative;
@@ -328,9 +339,10 @@ header .row{
 }
 .container5 .img1:hover{
     background: linear-gradient( to bottom, #080808 0%, #382a1b 52%,  #1a140b 100%) ;
+    background-size: contain;
+    background-repeat: no-repeat;
     outline: #b0aaa0 1px solid;
     outline-offset: -20px;
-    
 }
 .container5 .img1:hover img{
     opacity: 0.5;
@@ -389,16 +401,22 @@ header .row{
 }
 .container6 img{
     max-width: 100%;
+    min-width: 100px;
 }
 .container6 .row{
-    padding: 15px 5px;
+    margin: 0;
+    padding: 0;
 }
+.container6 .row.cont{
+    padding: 15px 0;
+}
+
 .container6 .row.cont6{
     padding-bottom: 90px;
 }
 .container6 .img_txt{
     text-align: center;
-   
+    margin-right: 0px;
 }
 .container6 .img_txt p{
     margin: 20px 0;
@@ -700,6 +718,9 @@ footer .instagram a:hover{
     .container2{
         margin: 0 auto;
     }
+    .container2 p.txt{
+        width: 100%;
+    }
     .center2{
         margin: 0 auto;
         max-width: 100%;
@@ -711,9 +732,12 @@ footer .instagram a:hover{
         width: 100%;
     }
     .container2 .left{
-        max-width: 84.1875%;
+        max-width: 90%;
         margin: 0 auto;
     }
+    .container2 .left h3{
+        font-size: 16px;
+    }  
     .container3 .head{
         margin-top: 70px;
     }  
@@ -739,6 +763,10 @@ footer .instagram a:hover{
         margin: 0 auto;
         text-align: center;
     }
+    .container5 .item .img1 img{
+        min-width: 260px;
+        max-height: 260px;
+    }
     .container5 .item .txt2{
         margin-bottom: 15px;
     }
@@ -755,7 +783,7 @@ footer .instagram a:hover{
         margin: 13px 0;
     }
     .container6 .feedback .stars{
-        margin: 0px 0;
+        margin: 4px 0;
     }
     .container6 .feedback .txt2{
         margin-bottom: 30px;
