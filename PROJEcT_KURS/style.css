@@ -85,6 +85,7 @@ header .row{
     font-weight: bold;
     white-space: nowrap;
     color: #c19864;
+    z-index: 2;
 }
 .header2 .left{
     font-weight: 14px;
@@ -119,6 +120,7 @@ header .row{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    z-index: 1;
 }
 .container1 h3{
     margin: 0 auto;
@@ -157,15 +159,10 @@ header .row{
     color: #ffffff;
     background-color: #c19864;
 }
-.cont1 .owl-carousel{
-    z-index: 2;
-    
-}
 .cont1 .owl-dots{
     display: flex;
     width: 100%;
     justify-content: center;
-    z-index: 2;
     padding-bottom: 42px;
     outline: none;
     position: absolute;
@@ -176,7 +173,7 @@ header .row{
     width: 16px;
     height: 16px;
     outline: none;
-    z-index: 2;
+   
 }
 .cont1 .owl-dots .owl-dot.active span{
     background-color: #c19864;
@@ -657,6 +654,7 @@ footer .instagram a:hover{
 		background-color: rgba(75, 54, 54, 0.678);
         cursor: pointer;
         margin-top: -41px;
+        z-index: 2;
 	}
 	header .burger i{
 		display: block;
@@ -848,13 +846,46 @@ footer .instagram a:hover{
     footer .social svg{
         margin: 15px 0;
     }
-    .header2 .menu{
-        width: 60%;
-    }
+    
+    header ul{
+		background-color: rgb(117, 117, 117);
+		width: 130px;
+	}
+	header .menu ul li{
+        border: rgb(66, 66, 66) 1px;
+        border-style: solid;
+        padding: 6px 6px;
+	}
+	header .menu ul li a{
+		text-decoration: none;
+		color: #333333;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 16px;
+		font-weight: 500;
+	}
     .container5 .container-fluid{
         padding: 0;
     }
     .container5 .logos img{
         max-width: 80%;
+    }
+    .container1 h2{
+        font-size: 36px;
+    }
+    .container1 h3{
+        padding-top: 120px;
+        font-size: 20px;
+    }
+    .container1 .btn{
+        margin: 75px 0 120px 0;
+    }
+}
+@media (max-width:390px){
+    .container1 .btn{
+        margin: 45px 0 100px 0;
+    }
+    .container1 h3{
+        padding-top: 100px;
+        font-size: 20px;
     }
 }
